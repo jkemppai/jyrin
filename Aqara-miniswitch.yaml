@@ -10,7 +10,8 @@ blueprint:
         device:
           integration: zha
           manufacturer: LUMI
-          model: lumi.remote.b1acn02
+  model: lumi.remote.b1acn02
+  class: zigpy.device.Device
     button_single_press:
       name: Single Press
       description: Action to run on single press
@@ -67,5 +68,5 @@ action:
     - '{{ command == ''release'' }}'
     sequence: !input 'button_released'
   - conditions:
-    - '{{ args_val == ''lumi.remote.b1acn01'' }}'
+    - '{{ args_val == ''lumi.remote.b1acn02'' }}'
     sequence: !input 'button_multi'
