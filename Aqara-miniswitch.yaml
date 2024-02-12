@@ -10,7 +10,7 @@ blueprint:
         device:
           integration: zha
           manufacturer: LUMI
-          model: lumi.remote.b1acn01
+          model: lumi.remote.b1acn02
     button_single_press:
       name: Single Press
       description: Action to run on single press
